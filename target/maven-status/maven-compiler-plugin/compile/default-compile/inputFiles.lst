@@ -10,6 +10,7 @@ C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\controller\Pr
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\controller\RelatorioController.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\controller\TreinoController.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\dto\AlunoDTO.java
+C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\dto\DietaRequest.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\dto\ExercicioDTO.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\dto\ImcDTO.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\dto\RelatorioProgressoDTO.java
@@ -17,6 +18,8 @@ C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\dto\TreinoDTO
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\AlimentoDieta.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\Aluno.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\Exercicio.java
+C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\PlanoAlimentar.java
+C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\PlanoAlimentarAlimento.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\Presenca.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\Professor.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\Progresso.java
@@ -24,6 +27,8 @@ C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\Treino.
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\model\User.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\AlimentoDietaRepository.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\AlunoRepository.java
+C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\PlanoAlimentarAlimentoRepository.java
+C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\PlanoAlimentarRepository.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\PresencaRepository.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\ProfessorRepository.java
 C:\Users\55139\academia-api\src\main\java\com\academia\academiaapi\repository\ProgressoRepository.java

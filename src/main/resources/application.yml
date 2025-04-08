@@ -1,18 +1,18 @@
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASS}
+    url: jdbc:postgresql://crossover.proxy.rlwy.net:22247/railway
+    username: postgres
+    password: DIXMGqEqZyZubTNSOlqradqHuvBPYxhY
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-server:
-  port: ${PORT:8080}
-
-spring:
   resources:
     static-locations: classpath:/static/
+
+server:
+  port: 8080

@@ -4,8 +4,12 @@ com\academia\academiaapi\model\AlimentoDieta.class
 com\academia\academiaapi\model\Presenca.class
 com\academia\academiaapi\repository\PresencaRepository.class
 com\academia\academiaapi\controller\TreinoController.class
+com\academia\academiaapi\model\PlanoAlimentarAlimento.class
 com\academia\academiaapi\model\Professor$ProfessorBuilder.class
+com\academia\academiaapi\repository\PlanoAlimentarRepository.class
 com\academia\academiaapi\service\PresencaService.class
+com\academia\academiaapi\repository\PlanoAlimentarAlimentoRepository.class
+com\academia\academiaapi\dto\DietaRequest.class
 com\academia\academiaapi\service\ProfessorService.class
 com\academia\academiaapi\AcademiaApiApplication.class
 com\academia\academiaapi\repository\UserRepository.class
@@ -38,5 +42,6 @@ com\academia\academiaapi\dto\TreinoDTO.class
 com\academia\academiaapi\model\Progresso$ProgressoBuilder.class
 com\academia\academiaapi\model\Treino.class
 com\academia\academiaapi\controller\ProfessorController.class
+com\academia\academiaapi\model\PlanoAlimentar.class
 com\academia\academiaapi\controller\AlimentoDietaController.class
 com\academia\academiaapi\repository\ProgressoRepository.class
