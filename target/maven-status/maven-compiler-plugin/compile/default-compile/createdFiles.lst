@@ -39,6 +39,7 @@ com\academia\academiaapi\model\Progresso.class
 com\academia\academiaapi\model\User.class
 com\academia\academiaapi\config\DataLoader.class
 com\academia\academiaapi\dto\TreinoDTO.class
+com\academia\academiaapi\controller\HomeController.class
 com\academia\academiaapi\model\Progresso$ProgressoBuilder.class
 com\academia\academiaapi\model\Treino.class
 com\academia\academiaapi\controller\ProfessorController.class
