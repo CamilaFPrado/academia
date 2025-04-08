@@ -1,0 +1,357 @@
+/* style.css */
+
+/* Estilos globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6; /* Cor de fundo geral */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor de texto padrão */
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo principal */
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b; /* Cor do título da seção */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb; /* Separador abaixo do título */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos do cabeçalho (header) */
+.header {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #22c55e; /* Cor primária (verde) para o logo */
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #4b5563; /* Cor dos links de navegação */
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #22c55e; /* Cor dos links de navegação ao passar o mouse */
+}
+
+.nav-menu li a.active {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+/* Estilos do formulário (form) */
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b5563;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form input[type="number"],
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form input[type="date"]:focus,
+.form input[type="number"]:focus,
+.form select:focus {
+    outline: none;
+    border-color: #22c55e;
+    box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.25);
+}
+
+.btn {
+    background-color: #22c55e; /* Cor primária para botões */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #16a34a; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos específicos da página de Alimentação (Atualizado) */
+#listaAlunos {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23718096" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.5em;
+    padding-right: 2.5em;
+}
+
+#listaAlunos:focus {
+    outline: none;
+    border-color: #2f855a;
+    box-shadow: 0 0 0 0.2rem rgba(47, 133, 90, 0.25);
+}
+
+#alimentacao-container {
+    margin-top: 20px;
+    display: grid; /* Organiza as refeições em um grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas responsivas */
+    gap: 15px; /* Espaçamento entre as refeições */
+}
+
+.refeicao {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.refeicao h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #374151;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e6ed;
+    padding-bottom: 5px;
+}
+
+.refeicao select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23718096" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.5em;
+    padding-right: 2.5em;
+}
+
+.refeicao select:focus {
+    outline: none;
+    border-color: #2f855a;
+    box-shadow: 0 0 0 0.2rem rgba(47, 133, 90, 0.25);
+}
+
+#total-calorias {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #16a34a;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#salvarDieta {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #22c55e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block; /* Garante que o botão seja exibido */
+    width: fit-content; /* Ocupa apenas a largura necessária */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#salvarDieta:hover {
+    background-color: #16a34a;
+}
+
+/* Estilos específicos da página de Progresso */
+#progresso-alunos {
+    /* Adicione estilos específicos para a exibição do progresso */
+}
+
+/* Estilos específicos da página de IMC */
+#resultadoIMC {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #f0fdfa;
+    border: 1px solid #bef264;
+    color: #166534;
+    font-weight: bold;
+}
+
+/* Estilos específicos da página de Treinos (Atualizado para .treino-card) */
+#treino-container {
+    margin-top: 20px;
+    display: flex; /* Para organizar os treinos lado a lado em telas maiores */
+    flex-wrap: wrap; /* Permite que os treinos quebrem para a próxima linha em telas menores */
+    gap: 20px; /* Espaçamento entre os blocos de treino */
+}
+
+.treino-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px; /* Espaçamento entre os blocos verticalmente (redundante com gap, mas pode ser útil) */
+    width: calc(50% - 10px); /* Para mostrar dois treinos por linha em telas maiores */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+@media (max-width: 768px) {
+    .treino-card {
+        width: 100%; /* Um treino por linha em telas menores */
+    }
+}
+
+.treino-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2d3748; /* Cor mais escura para o título do treino */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #edf2f7; /* Linha mais clara para separar o título */
+    padding-bottom: 8px;
+}
+
+.treino-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.treino-card li {
+    margin-bottom: 12px;
+    color: #4a5568;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #e0e6ed;
+}
+
+.treino-card li:last-child {
+    border-bottom: none;
+}
+
+.treino-card li span:first-child { /* Para o nome do exercício */
+    font-weight: 600;
+    color: #2c3e50; /* Cor um pouco mais escura para o nome do exercício */
+}
+
+.treino-card li span:last-child { /* Para séries e repetições (se você adicionar um span) */
+    font-size: 0.95rem;
+    color: #718096;
+}
+
+/* Estilos para labels e selects (já definidos anteriormente, mantenho aqui por clareza) */
+label[for="listaAlunos"],
+label[for="ListaDias"] {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: bold;
+}
+
+#listaAlunos,
+#ListaDias {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23718096" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.5em;
+    padding-right: 2.5em;
+}
+
+#listaAlunos:focus,
+#ListaDias:focus {
+    outline: none;
+    border-color: #2f855a;
+    box-shadow: 0 0 0 0.2rem rgba(47, 133, 90, 0.25);
+}
+
+#media-calorias {
+    margin-top: 30px;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: #f0fff4;
+    border: 1px solid #9ae6b4;
+    color: #276749;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}

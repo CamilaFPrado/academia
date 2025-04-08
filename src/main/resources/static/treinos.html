@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planos de Treino</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <h1 class="logo">FitLife</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Alunos</a></li>
+                <li><a href="cadastrar-aluno.html">Cadastrar Aluno</a></li>
+                <li><a href="progresso.html">Progresso</a></li>
+                <li><a href="imc.html">IMC</a></li>
+                <li><a href="treinos.html" class="active">Treinos</a></li>
+                <li><a href="alimentacao.html">Alimentação</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2 class="section-title">Plano de Treinos Personalizado</h2>
+
+        <!-- Seleção do aluno -->
+        <label for="listaAlunos">Selecione o aluno:</label>
+        <select id="listaAlunos">
+            <option value="">Selecione um aluno</option>
+            <!-- Opções de alunos serão carregadas aqui -->
+        </select>
+
+        <!-- Seleção do dia da semana -->
+        <label for="ListaDias">Selecione o dia:</label>
+        <select id="ListaDias">
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Terça-feira</option>
+            <option value="Quarta-feira">Quarta-feira</option>
+            <option value="Quinta-feira">Quinta-feira</option>
+            <option value="Sexta-feira">Sexta-feira</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+
+        <div id="treino-container">
+            <!-- O plano de treino será exibido aqui -->
+        </div>
+
+        <div id="media-calorias">
+            <!-- Média de calorias será exibida aqui -->
+        </div>
+    </section>
+</main>
+
+<!-- Referência ao arquivo JS externo -->
+<script src="js/treinos.js"></script>
+</body>
+</html>
