@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <h1 class="logo">FitLife</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Alunos</a></li>
+                <li><a href="cadastrar-aluno.html">Cadastrar Aluno</a></li>
+                <li><a href="progresso.html">Progresso</a></li>
+                <li><a href="imc.html" class="active">IMC</a></li>
+                <li><a href="treinos.html">Treinos</a></li>
+                <li><a href="alimentacao.html">Alimentação</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2 class="section-title">Calculadora de IMC</h2>
+        <div class="card">
+            <form id="formIMC">
+                <label for="listaAlunos">Selecione o aluno:</label>
+                <select id="listaAlunos" name="alunoId" required>
+                    <option value="">Carregando alunos...</option>
+                </select>
+
+                <label for="altura">Altura (em metros):</label>
+                <input type="number" id="altura" name="altura" step="0.01" required />
+
+                <label for="peso">Peso (em kg):</label>
+                <input type="number" id="peso" name="peso" step="0.01" required />
+
+                <button type="submit">Calcular IMC</button>
+            </form>
+            <div id="resultadoIMC" class="resultado-imc">
+                <!-- Aqui pode aparecer o resultado calculado após o submit do formulário -->
+                <p id="resultado">Por favor, insira os dados e calcule o IMC.</p>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<script src="js/imc.js"></script>
+</body>
+</html>
